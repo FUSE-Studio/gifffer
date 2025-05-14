@@ -88,30 +88,41 @@ npm i --save-dev @types/gifffer
 
 ## Styling
 
-The `Gifffer()` function accepts a few options for styling:
+The `Gifffer()` function accepts a few options for styling and an option detailing whether the gif will play on load:
 
 ```
 Gifffer({
-  playButtonStyles: {
-    'width': '60px',
-    'height': '60px',
-    'border-radius': '30px',
-    'background': 'rgba(0, 0, 0, 0.3)',
-    'position': 'absolute',
-    'top': '50%',
-    'left': '50%',
-    'margin': '-30px 0 0 -30px'
+  buttonStyles: {
+      'width': '60px',
+      'height': '60px',
+      'border-radius':'30px',
+      'background':'rgb(255, 255, 255)',
+      'position':'absolute',
+      'box-shadow':'inset 0 0 0 2px black',
+      'bottom':'40px',
+      'left':'40px',
+      'margin':'-15px'
   },
   playButtonIconStyles: {
-    'width': '0',
-    'height': '0',
-    'border-top': '14px solid transparent',
-    'border-bottom': '14px solid transparent',
-    'border-left': '14px solid rgba(0, 0, 0, 0.5)',
-    'position': 'absolute',
-    'left': '26px',
-    'top': '16px'
-  }
+      'width': '0',
+      'height': '0',
+      'border-top': '12px solid transparent',
+      'border-bottom': '12px solid transparent',
+      'border-left': '21px solid rgb(0, 0, 0)',
+      'position': 'absolute',
+      'left': '22px',
+      'top': '17px'
+  },
+  pauseButtonIconStyles:{
+      'width': '7px',
+      'height': '28px',
+      'background-color': 'rgba(0, 0, 0)',
+      'position': 'absolute',
+      'left': '20px',
+      'top': '16px',
+      'box-shadow': '14px 0 rgb(0, 0, 0)'
+  },
+  playOnLoad: false,
 });
 ```
 
